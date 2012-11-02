@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28C925641643F28C0066ADFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C925631643F28C0066ADFD /* UIKit.framework */; };
+		28C925661643F28C0066ADFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C925651643F28C0066ADFD /* Foundation.framework */; };
+		28C925681643F28C0066ADFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C925671643F28C0066ADFD /* CoreGraphics.framework */; };
+		28C9256E1643F28C0066ADFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28C9256C1643F28C0066ADFD /* InfoPlist.strings */; };
+		28C925701643F28C0066ADFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C9256F1643F28C0066ADFD /* main.m */; };
+		28C925741643F28C0066ADFD /* TextureCocoaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C925731643F28C0066ADFD /* TextureCocoaAppDelegate.m */; };
+		28C925771643F28C0066ADFD /* TextureCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C925761643F28C0066ADFD /* TextureCocoaViewController.m */; };
+		28C9257A1643F28C0066ADFD /* TextureCocoaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28C925781643F28C0066ADFD /* TextureCocoaViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28C9255F1643F28C0066ADFD /* TextureCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C925631643F28C0066ADFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28C925651643F28C0066ADFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28C925671643F28C0066ADFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28C9256B1643F28C0066ADFD /* TextureCocoa-Info.plist */ = {isa = PBXFileReference; path = "TextureCocoa-Info.plist"; sourceTree = "<group>"; };
+		28C9256D1643F28C0066ADFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28C9256F1643F28C0066ADFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28C925711643F28C0066ADFD /* TextureCocoa-Prefix.pch */ = {isa = PBXFileReference; path = "TextureCocoa-Prefix.pch"; sourceTree = "<group>"; };
+		28C925721643F28C0066ADFD /* TextureCocoaAppDelegate.h */ = {isa = PBXFileReference; path = TextureCocoaAppDelegate.h; sourceTree = "<group>"; };
+		28C925731643F28C0066ADFD /* TextureCocoaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureCocoaAppDelegate.m; sourceTree = "<group>"; };
+		28C925751643F28C0066ADFD /* TextureCocoaViewController.h */ = {isa = PBXFileReference; path = TextureCocoaViewController.h; sourceTree = "<group>"; };
+		28C925761643F28C0066ADFD /* TextureCocoaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureCocoaViewController.m; sourceTree = "<group>"; };
+		28C925791643F28C0066ADFD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TextureCocoaViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28C9255C1643F28C0066ADFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C925641643F28C0066ADFD /* UIKit.framework in Frameworks */,
+				28C925661643F28C0066ADFD /* Foundation.framework in Frameworks */,
+				28C925681643F28C0066ADFD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C925541643F28B0066ADFD = {
+			isa = PBXGroup;
+			children = (
+				28C925691643F28C0066ADFD /* TextureCocoa */,
+				28C925621643F28C0066ADFD /* Frameworks */,
+				28C925601643F28C0066ADFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28C925601643F28C0066ADFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28C9255F1643F28C0066ADFD /* TextureCocoa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28C925621643F28C0066ADFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28C925631643F28C0066ADFD /* UIKit.framework */,
+				28C925651643F28C0066ADFD /* Foundation.framework */,
+				28C925671643F28C0066ADFD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28C925691643F28C0066ADFD /* TextureCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				28C925721643F28C0066ADFD /* TextureCocoaAppDelegate.h */,
+				28C925731643F28C0066ADFD /* TextureCocoaAppDelegate.m */,
+				28C925751643F28C0066ADFD /* TextureCocoaViewController.h */,
+				28C925761643F28C0066ADFD /* TextureCocoaViewController.m */,
+				28C925781643F28C0066ADFD /* TextureCocoaViewController.xib */,
+				28C9256A1643F28C0066ADFD /* Supporting Files */,
+			);
+			path = TextureCocoa;
+			sourceTree = "<group>";
+		};
+		28C9256A1643F28C0066ADFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28C9256B1643F28C0066ADFD /* TextureCocoa-Info.plist */,
+				28C9256C1643F28C0066ADFD /* InfoPlist.strings */,
+				28C9256F1643F28C0066ADFD /* main.m */,
+				28C925711643F28C0066ADFD /* TextureCocoa-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28C9255E1643F28C0066ADFD /* TextureCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C9257D1643F28C0066ADFD /* Build configuration list for PBXNativeTarget "TextureCocoa" */;
+			buildPhases = (
+				28C9255B1643F28C0066ADFD /* Sources */,
+				28C9255C1643F28C0066ADFD /* Frameworks */,
+				28C9255D1643F28C0066ADFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextureCocoa;
+			productName = TextureCocoa;
+			productReference = 28C9255F1643F28C0066ADFD /* TextureCocoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28C925561643F28B0066ADFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TextureCocoa;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 28C925591643F28B0066ADFD /* Build configuration list for PBXProject "TextureCocoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28C925541643F28B0066ADFD;
+			productRefGroup = 28C925601643F28C0066ADFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28C9255E1643F28C0066ADFD /* TextureCocoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28C9255D1643F28C0066ADFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C9256E1643F28C0066ADFD /* InfoPlist.strings in Resources */,
+				28C9257A1643F28C0066ADFD /* TextureCocoaViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28C9255B1643F28C0066ADFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C925701643F28C0066ADFD /* main.m in Sources */,
+				28C925741643F28C0066ADFD /* TextureCocoaAppDelegate.m in Sources */,
+				28C925771643F28C0066ADFD /* TextureCocoaViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28C9256C1643F28C0066ADFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C9256D1643F28C0066ADFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		28C925781643F28C0066ADFD /* TextureCocoaViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C925791643F28C0066ADFD /* en */,
+			);
+			name = TextureCocoaViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28C9257B1643F28C0066ADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28C9257C1643F28C0066ADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28C9257E1643F28C0066ADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextureCocoa/TextureCocoa-Prefix.pch";
+				INFOPLIST_FILE = "TextureCocoa/TextureCocoa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		28C9257F1643F28C0066ADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextureCocoa/TextureCocoa-Prefix.pch";
+				INFOPLIST_FILE = "TextureCocoa/TextureCocoa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28C925591643F28B0066ADFD /* Build configuration list for PBXProject "TextureCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C9257B1643F28C0066ADFD /* Debug */,
+				28C9257C1643F28C0066ADFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C9257D1643F28C0066ADFD /* Build configuration list for PBXNativeTarget "TextureCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C9257E1643F28C0066ADFD /* Debug */,
+				28C9257F1643F28C0066ADFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28C925561643F28B0066ADFD /* Project object */;
+}
