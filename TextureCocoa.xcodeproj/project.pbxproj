@@ -15,6 +15,12 @@
 		28C925741643F28C0066ADFD /* TextureCocoaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C925731643F28C0066ADFD /* TextureCocoaAppDelegate.m */; };
 		28C925771643F28C0066ADFD /* TextureCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C925761643F28C0066ADFD /* TextureCocoaViewController.m */; };
 		28C9257A1643F28C0066ADFD /* TextureCocoaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28C925781643F28C0066ADFD /* TextureCocoaViewController.xib */; };
+		28C925821643F3580066ADFD /* ui_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C925801643F3580066ADFD /* ui_texture.png */; };
+		28C925831643F3580066ADFD /* ui_texture.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28C925811643F3580066ADFD /* ui_texture.plist */; };
+		28C925851643F3AB0066ADFD /* bird1-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C925841643F3AB0066ADFD /* bird1-50.png */; };
+		28C9258F164400D90066ADFD /* TexureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C9258E164400D90066ADFD /* TexureManager.m */; };
+		28C925921644112F0066ADFD /* tx_ready.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C925901644112F0066ADFD /* tx_ready.png */; };
+		28C925931644112F0066ADFD /* tx_ready.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28C925911644112F0066ADFD /* tx_ready.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +28,22 @@
 		28C925631643F28C0066ADFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28C925651643F28C0066ADFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28C925671643F28C0066ADFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28C9256B1643F28C0066ADFD /* TextureCocoa-Info.plist */ = {isa = PBXFileReference; path = "TextureCocoa-Info.plist"; sourceTree = "<group>"; };
+		28C9256B1643F28C0066ADFD /* TextureCocoa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextureCocoa-Info.plist"; sourceTree = "<group>"; };
 		28C9256D1643F28C0066ADFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28C9256F1643F28C0066ADFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		28C925711643F28C0066ADFD /* TextureCocoa-Prefix.pch */ = {isa = PBXFileReference; path = "TextureCocoa-Prefix.pch"; sourceTree = "<group>"; };
-		28C925721643F28C0066ADFD /* TextureCocoaAppDelegate.h */ = {isa = PBXFileReference; path = TextureCocoaAppDelegate.h; sourceTree = "<group>"; };
+		28C925711643F28C0066ADFD /* TextureCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextureCocoa-Prefix.pch"; sourceTree = "<group>"; };
+		28C925721643F28C0066ADFD /* TextureCocoaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureCocoaAppDelegate.h; sourceTree = "<group>"; };
 		28C925731643F28C0066ADFD /* TextureCocoaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureCocoaAppDelegate.m; sourceTree = "<group>"; };
-		28C925751643F28C0066ADFD /* TextureCocoaViewController.h */ = {isa = PBXFileReference; path = TextureCocoaViewController.h; sourceTree = "<group>"; };
+		28C925751643F28C0066ADFD /* TextureCocoaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureCocoaViewController.h; sourceTree = "<group>"; };
 		28C925761643F28C0066ADFD /* TextureCocoaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureCocoaViewController.m; sourceTree = "<group>"; };
 		28C925791643F28C0066ADFD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TextureCocoaViewController.xib; sourceTree = "<group>"; };
+		28C925801643F3580066ADFD /* ui_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui_texture.png; sourceTree = "<group>"; };
+		28C925811643F3580066ADFD /* ui_texture.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ui_texture.plist; sourceTree = "<group>"; };
+		28C925841643F3AB0066ADFD /* bird1-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird1-50.png"; sourceTree = "<group>"; };
+		28C9258D164400D90066ADFD /* TexureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexureManager.h; sourceTree = "<group>"; };
+		28C9258E164400D90066ADFD /* TexureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TexureManager.m; sourceTree = "<group>"; };
+		28C925901644112F0066ADFD /* tx_ready.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tx_ready.png; sourceTree = "<group>"; };
+		28C925911644112F0066ADFD /* tx_ready.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tx_ready.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,13 @@
 				28C925731643F28C0066ADFD /* TextureCocoaAppDelegate.m */,
 				28C925751643F28C0066ADFD /* TextureCocoaViewController.h */,
 				28C925761643F28C0066ADFD /* TextureCocoaViewController.m */,
+				28C9258D164400D90066ADFD /* TexureManager.h */,
+				28C9258E164400D90066ADFD /* TexureManager.m */,
+				28C925841643F3AB0066ADFD /* bird1-50.png */,
+				28C925801643F3580066ADFD /* ui_texture.png */,
+				28C925811643F3580066ADFD /* ui_texture.plist */,
+				28C925901644112F0066ADFD /* tx_ready.png */,
+				28C925911644112F0066ADFD /* tx_ready.plist */,
 				28C925781643F28C0066ADFD /* TextureCocoaViewController.xib */,
 				28C9256A1643F28C0066ADFD /* Supporting Files */,
 			);
@@ -151,6 +171,11 @@
 			files = (
 				28C9256E1643F28C0066ADFD /* InfoPlist.strings in Resources */,
 				28C9257A1643F28C0066ADFD /* TextureCocoaViewController.xib in Resources */,
+				28C925821643F3580066ADFD /* ui_texture.png in Resources */,
+				28C925831643F3580066ADFD /* ui_texture.plist in Resources */,
+				28C925851643F3AB0066ADFD /* bird1-50.png in Resources */,
+				28C925921644112F0066ADFD /* tx_ready.png in Resources */,
+				28C925931644112F0066ADFD /* tx_ready.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +189,7 @@
 				28C925701643F28C0066ADFD /* main.m in Sources */,
 				28C925741643F28C0066ADFD /* TextureCocoaAppDelegate.m in Sources */,
 				28C925771643F28C0066ADFD /* TextureCocoaViewController.m in Sources */,
+				28C9258F164400D90066ADFD /* TexureManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
