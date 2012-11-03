@@ -61,7 +61,12 @@ static TexureManager * _instance;
     
     NSDictionary * atts     = [dicRoot objectForKey:ATTRS_KEY];
     
-    UIImage * image         = [UIImage imageNamed:[atts objectForKey:IMAGE_NAME_KEY]];
+    NSString * textureName  = [atts objectForKey:IMAGE_NAME_KEY];
+    textureName             = [textureName stringByDeletingPathExtension];
+    NSString * path         = [[NSBundle mainBundle] pathForResource:textureName
+                                                              ofType:@"png"];
+    //UIImage * image         = [UIImage imageNamed:];
+    UIImage * image         = [[UIImage alloc] initWithContentsOfFile:path];
     NSDictionary * frames   = [dicRoot objectForKey:FRAMES_KEY];
     
     int scale = retina?2:1;
@@ -98,16 +103,22 @@ static TexureManager * _instance;
         
         CGImageRef ref =  CGImageCreateWithImageInRect(image.CGImage, frameRect);
         
-        UIImageOrientation orientation = is_orientation?UIImageOrientationLeft:UIImageOrientationUp;
-
-        UIImage * image = [TexureManager createImageFrom:ref 
-                                        destinationWidth:destinationWidth
-                                       destinationHeight:destinationHeight
-                                                  offset:sourceColorRect.origin
-                                                   scale:scale
-                                             orientation:orientation];
+        UIImageOrientation orientation =    is_orientation?
+                                            UIImageOrientationLeft:
+                                            UIImageOrientationUp;
         
-        [texureDic setObject:image forKey:key];
+        UIImage * rotated       = [UIImage imageWithCGImage:ref
+                                                      scale:1
+                                                orientation:orientation];
+        UIImage * saveImage     = [TexureManager createImageFrom:rotated.CGImage
+                                                destinationWidth:destinationWidth
+                                               destinationHeight:destinationHeight
+                                                          offset:sourceColorRect.origin
+                                                           scale:scale
+                                                     orientation:orientation];
+        
+        [texureDic setObject:saveImage
+                      forKey:key];
         CGImageRelease(ref);
     }
 }
@@ -129,7 +140,7 @@ static TexureManager * _instance;
     
     NSInteger src_width    = CGImageGetWidth(source);
     NSInteger src_height   = CGImageGetHeight(source);
-    
+
     uint32_t * sources = (uint32_t*)malloc(src_width*src_height*sizeof(uint32_t));
     memset(sources, 0, src_width*src_height*sizeof(uint32_t));
     
@@ -189,7 +200,7 @@ static TexureManager * _instance;
                                             scale:scale 
                                       orientation:orientation];
     
-    free(be_painted_pixels);
+  //  free(be_painted_pixels);
     free(sources);
     CFRelease(context);
     

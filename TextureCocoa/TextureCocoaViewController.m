@@ -21,22 +21,38 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     
-//    [[TexureManager shareInstance] addTextureFile:@"tx_ready"
-//                                         isRetina:FALSE];
-    NSString * path = [[NSBundle mainBundle] pathForResource:@"bird1-50" ofType:@"png"];
-    UIImage * src = [[UIImage alloc] initWithContentsOfFile:path];
-    UIImage * image = [TexureManager createImageFrom:src.CGImage
-                                    destinationWidth:200
-                                   destinationHeight:200 
-                                              offset:CGPointMake(20, 10)
-                                               scale:1
-                                         orientation:UIImageOrientationUp];
-    UIImageView * iv =[[UIImageView alloc] initWithImage:image];
-    [sv_content addSubview:iv];
-    [iv release];
+    [[TexureManager shareInstance] addTextureFile:@"tx_ready"
+                                            isRetina:FALSE];
+   
+    
+//    NSString * path = [[NSBundle mainBundle] pathForResource:@"bird1-50" ofType:@"png"];
+//    UIImage * src = [[UIImage alloc] initWithContentsOfFile:path];
+//    
+//    CGImageRef ref =  CGImageCreateWithImageInRect(src.CGImage, CGRectMake(50, 50, 100, 50));
+//    
+//    UIImage * rotated= [UIImage imageWithCGImage:ref
+//                                           scale:1
+//                                     orientation:UIImageOrientationLeft];
+//    UIImage * image = [TexureManager createImageFrom:rotated.CGImage
+//                                    destinationWidth:300
+//                                   destinationHeight:300 
+//                                              offset:CGPointMake(20, 10)
+//                                               scale:1
+//                                         orientation:UIImageOrientationUp];
+//    UIImageView * iv =[[UIImageView alloc] initWithImage:image];
+//    [sv_content addSubview:iv];
+//    [iv release];
+//    [src release];
+    
+//    UIButton * btn =[UIButton buttonWithType:UIButtonTypeCustom];
+//    [btn setImage:image
+//         forState:UIControlStateNormal];
+//    [sv_content addSubview:btn];
+//    btn.frame  =CGRectMake(0, 0, image.size.width, image.size.height);
     
     
-    return;
+    
+    //return;
     int y=0;
     for (UIImage * image in [[TexureManager shareInstance] getAllImages])
     {
