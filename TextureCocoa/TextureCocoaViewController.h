@@ -11,5 +11,4 @@
 @interface TextureCocoaViewController : UIViewController
 
 @property (retain, nonatomic) IBOutlet UIScrollView *sv_content;
-- (IBAction)addImage:(id)sender;
 @end
