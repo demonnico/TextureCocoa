@@ -1,0 +1,1 @@
+使用该项目可以让我们在UIKit的项目方便使用TexturePacker导出的.png图。
